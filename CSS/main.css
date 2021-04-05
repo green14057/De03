@@ -1,0 +1,1020 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face
+{font-family: xbold;
+src: url(../Font/AktivGroteskCorp-Bold.ttf);}
+@font-face
+{font-family: xlight;
+src: url(../Font/AktivGroteskCorp-Light.ttf);}
+@font-face
+{font-family: xregular;
+src: url(../Font/AktivGroteskCorp-Regular.ttf);}
+
+@keyframes great {
+	
+	0% {opacity: 0;
+		transform: scale(0.0);}
+	50% {opacity: 1;
+		transform: scale(1.5);}
+	70% {opacity: 0;
+		transform: scale(1.1);}
+	100% {opacity: 1;
+		transform: scale(1.1)}
+}
+
+@keyframes ios {
+	
+	0% {opacity: 0;
+		left: -500px;}
+	100% {opacity: 1;
+		left: 0px;}
+	}
+@keyframes android {
+	
+	0% {opacity: 0;
+		left: -500px;}
+	100% {opacity: 1;
+		left: 178px;}
+	}
+@keyframes ip {
+	
+	0% {opacity: 0;
+		top: 500px;}
+	100% {opacity: 1;
+		top: 185px;}
+	}
+@keyframes ip2 {
+	
+	0% {opacity: 0;
+		top: 500px;}
+	100% {opacity: 1;
+		top: 241px;}
+	}
+/*Percent animation*/
+.svg-item {
+    width: 100%;
+    font-size: 16px;
+    animation: donutfade 1s;
+
+}
+
+@keyframes donutfade {
+  /* this applies to the whole svg item wrapper */
+    0% {
+        opacity: .2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.donut-segment-2 {
+    stroke:rgb(255,88,88);
+    animation: donut1 3s infinite;
+}
+
+.donut-segment-3 {
+     stroke:rgb(255,88,88);	
+    animation: donut2 3s infinite;
+}
+
+.donut-segment-4 {
+     stroke:rgb(255,88,88); 
+    animation: donut3 3s infinite;
+}
+
+.donut-segment-5 {
+     stroke:rgb(255,88,88);
+    animation: donut4 3s infinite;
+}
+
+.donut-percent {
+    animation: donutfadelong 1s;
+}
+
+@keyframes donutfadelong {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes donut1 {
+    0% {
+        stroke-dasharray: 0, 100;
+    }
+    100% {
+        stroke-dasharray: 50, 50;
+    }
+}
+
+@keyframes donut2 {
+    0% {
+        stroke-dasharray: 0, 100;
+    }
+    100% {
+        stroke-dasharray: 25, 75;
+    }
+}
+
+@keyframes donut3{
+    0% {
+        stroke-dasharray: 0, 100;
+    }
+    100% {
+        stroke-dasharray: 75, 25;
+    }
+}
+
+@keyframes donut4{
+    0% {
+        stroke-dasharray: 0, 100;
+    }
+    100% {
+        stroke-dasharray: 100, 0;
+    }
+}
+
+.donut-text {
+    font-family: Arial, Helvetica, sans-serif;
+    fill: #FF6200;
+}
+.donut-text-1 {
+    fill: black;
+	font-family: xbold;
+	opacity: 0.7;
+}
+.donut-text-2 {
+    fill: black;
+	font-family: xbold;
+	opacity: 0.7;
+}
+.donut-text-3 {
+    fill: black;
+	font-family: xbold;
+	opacity: 0.7;
+}
+
+.donut-text-4 {
+    fill: black;
+	font-family: xbold;
+	opacity: 0.7;
+}
+
+.donut-label {
+    font-size: 0.28em;
+    font-weight: 700;
+    line-height: 1;
+    fill: #000;
+    transform: translateY(0.25em);
+}
+
+.donut-percent {
+    font-size: 0.5em;
+    line-height: 1;
+    transform: translateY(0.5em);
+    font-weight: bold;
+}
+
+.donut-data {
+    font-size: 0.12em;
+    line-height: 1;
+    transform: translateY(0.5em);
+    text-align: center;
+    text-anchor: middle;
+    color:#49576d;
+    fill: #49576d;
+    animation: donutfadelong 1s;
+}
+
+
+
+/**/
+.Biggest
+{width: 100%;
+height: 100%;
+background-color: aqua;
+margin: 0px;
+padding: 0px;}
+	.Header
+		{width: 100%;
+		height: 795px;
+		background: url(../Images/header.png);
+		display: flex;
+		justify-content: center;}
+		.Menu
+			{width: 1120px;
+			height: 100px;
+			top: 40px;
+			position: relative;}
+			.Logo
+				{width: 160px;
+				height: 100px;
+				float: left;
+				position: relative;
+				left: 9px;}
+				.Logo01
+					{width: 48px;
+					height: 48px;
+					background-color: white;
+					border-radius: 5px;
+					position: absolute;
+					top: 33px;}
+					.Logo01 img
+						{position: absolute;
+						left: 5px;
+						top: 2px;}
+				.Logotext
+					{width: 95px;
+					height: 45px;
+					position: absolute;
+					top: 43px;
+					left: 64px;}
+			.Menu01
+				{width: 500px;
+				height: 55px;
+				position: absolute;
+				top: 31px;
+				left: 500px;}
+				.Menu01 ul li
+					{float: left;
+					margin: 0px 0px 0px 40px;
+					left: 0;}
+				.Menu01 ul li a
+					{text-decoration: none;
+					color: white;
+					font-size: 13px;
+					font-family: xbold;}
+				.Menu01 ul
+					{list-style: none;}
+				.Menu01 ul li:hover
+					{background-color: none;
+					opacity: 0.5;}
+			.Menu button
+				{width: 90px;
+				height: 46px;
+				position: absolute;
+				top: 34px;
+				left: 1020px;
+				border: 2px #FFFFFF solid;
+				border-radius: 30px;
+				list-style: none;
+				background-color: #fa66b2;
+				font-size: 13px;}
+			.Menu button ul
+				{list-style: none;}
+			.Menu button ul li
+				{position: absolute;
+				top: 14px;
+				left: 18px;}
+			.Menu button ul li a
+				{text-decoration: none;
+				color: white;}
+		.Ip
+			{width: 561px;
+			height: 618px;
+			background: url(../Images/ip.png);
+			position: absolute;
+			left: 700px;
+			top: 185px;
+			z-index: 10;
+			animation: ip 1s 1s forwards;
+			opacity: 0;}
+		.Ip2
+			{width: 520px;
+			height: 565px;
+			background: url(../Images/ip2.png);
+			position: absolute;
+			z-index: 5;
+			top: 241px;
+			left: 940px;
+			animation: ip2 1s 1.5s forwards;
+			opacity: 0;}
+		.Text
+			{width: 380px;
+			height: 320px;
+			position: absolute;
+			top: 315px;
+			left: 208px;
+			animation: great 2s forwards;
+			opacity: 0;
+			overflow: hidden;
+			font-family: xlight;
+			font-size: 35pt;}
+				.Text01
+					{width: 158px;
+					height: 60px;
+					position: relative;
+					top: 50px;
+					border-radius: 30px;
+					border: 2px #FFFFFF solid;
+					animation: ios 1s 2s forwards;
+					opacity: 0;}
+				.Text01text ul li
+						{width: 115px;
+						height: 15px;
+						position: absolute;
+						top: 22px;
+						left: 60px;
+						font-size: 13px;
+						font-family: xbold;
+						text-decoration:  none;}
+					.Text01text ul
+						{list-style: none;}
+					.Text01text ul li a
+						{text-decoration: none;
+						color: white;}
+					.Text01 img
+						{position: absolute;
+						top: 16px;
+						left: 25px;}
+				.Text02
+					{width: 200px;
+					height: 60px;
+					position: absolute;
+					top: 218px;
+					left: 178px;
+					border-radius: 30px;
+					border: 2px #FFFFFF solid;
+					text-decoration: none;
+					animation: android 1s 2.5s forwards;
+					opacity: 0;}
+					.Text02text ul li
+						{width: 115px;
+						height: 15px;
+						position: absolute;
+						top: 22px;
+						left: 60px;
+						font-size: 13px;
+						font-family: xbold;
+						text-decoration:  none;}
+					.Text02text ul
+						{list-style: none;}
+					.Text02text ul li a
+						{text-decoration: none;
+						color: white;}
+					.Text02 img
+						{position: absolute;
+						top: 16px;
+						left: 25px;}
+
+	.Middle01
+		{width: 100%;
+		height: 904px;
+		background: url(../Images/Middle.png);
+		position: relative;
+		z-index: 15;}
+		.Middletext
+			{width: 730px;
+			height: 210px;
+			position: absolute;
+			top: 150px;
+			left: 395px;
+			font-size: 40px;
+			font-family: xlight;}
+			.Circletext
+				{width: 78px;
+				height: 24px;
+				position: absolute;
+				top: 102px;
+				left: 330px;}
+				.Ci01
+					{width: 4px;
+					height: 4px;
+					background-color: #FF5858;
+					border-radius: 100%;
+					position: absolute;
+					top: 10px;
+					left: 7px;}
+				.Ci02
+					{width: 4px;
+					height: 4px;
+					background-color: #FF5858;
+					border-radius: 100%;
+					position: absolute;
+					top: 10px;
+					left: 20px;}
+				.Ci03
+					{width: 6px;
+					height: 6px;
+					background: rgb(255,88,88);
+					background: linear-gradient(50deg, rgba(255,88,88,1) 21%, rgba(251,87,130,1) 54%, rgba(248,87,166,1) 100%);
+					border-radius: 100%;
+					position: absolute;
+					top: 9px;
+					left: 35px;}
+				.Ci04
+					{width: 4px;
+					height: 4px;
+					background-color: #F857A6;
+					border-radius: 100%;
+					position: absolute;
+					top: 10px;
+					left: 51px;}
+				.Ci05
+					{width: 4px;
+					height: 4px;
+					background-color: #F857A6;
+					border-radius: 100%;
+					position: absolute;
+					top: 10px;
+					left: 65px;}
+			.Middletext01
+				{width: 730px;
+				height: 100px;
+				position: absolute;
+				top: 143px;}
+				.Middletext_01
+					{width: 730px;
+					height: 15px;
+					margin: 0px 0px 10px 0px;
+					font-size: 15px;
+					font-family: xregular;
+					opacity: 0.7;}
+		.Circle01
+			{width: 25px;
+			height: 25px;
+			border-radius: 100%;
+			background: rgb(255,98,98);
+			background: -webkit-linear-gradient(320deg, rgba(255,98,98,1) 4%, rgba(249,87,147,1) 100%);
+			background: -o-linear-gradient(320deg, rgba(255,98,98,1) 4%, rgba(249,87,147,1) 100%);
+			background: linear-gradient(50deg, rgba(255,98,98,1) 4%, rgba(249,87,147,1) 100%);
+			position: absolute;
+			top: 720px;
+			left: 362px;}
+		.Circle02
+			{width: 25px;
+			height: 25px;
+			border-radius: 100%;
+			background: rgb(255,88,88);
+			background: linear-gradient(50deg, rgba(255,88,88,1) 24%, rgba(249,87,147,1) 100%);
+			position: absolute;
+			top: 660px;
+			left: 740px;}
+		.Circle03
+			{width: 25px;
+			height: 25px;
+			border-radius: 100%;
+			background: rgb(255,88,88);
+			background: linear-gradient(50deg, rgba(255,88,88,1) 24%, rgba(249,87,147,1) 100%);
+			position: absolute;
+			top: 725px;
+			left: 1117px;}
+		.Box01
+			{width: 370px;
+			height: 196px;
+			background: url(../Images/box.png) no-repeat;
+			position: absolute;
+			top: 525px;
+			left: 190px;}
+		.Box02
+			{width: 370px;
+			height: 196px;
+			background: url(../Images/box.png) no-repeat;
+			position: absolute;
+			top: 465px;
+			left: 567px;}
+		.Box03
+			{width: 370px;
+			height: 196px;
+			background: url(../Images/box.png) no-repeat;
+			position: absolute;
+			top: 530px;
+			left: 945px;}
+			.Boxtext01
+				{width: 45px;
+				height: 25px;
+				position: absolute;
+				top: 40px;
+				left: 165px;
+				font-size: 13px;
+				font-family: xbold;}
+			.Boxtext02
+				{width: 280px;
+				height: 100px;
+				position: absolute;
+				top: 70px;
+				left: 43px;}
+				.Boxtext_01
+					{width: 280px;
+					height: 15px;
+					font-size: 15px;
+					font-family: xregular;
+					margin: 0px 0px 10px 0px;
+					opacity: 0.7;}
+			
+	.Middle02
+		{width: 100%;
+		height: 890px;
+		background-color: white;
+		position: relative;}
+		.Textbox
+			{width: 255px;
+			height: 155px;
+			position: relative;
+			top: 660px;
+			left: 190px;
+			float: left;
+			margin: 0px 33px 0px 0px;}
+			.Textbox_01
+				{width: 255px;
+				height: 25px;
+				position: absolute;
+				font-size: 23px;
+				font-family: xlight;
+				opacity: 0.7;}
+			.Textbox_02
+				{width: 255px;
+				height: 15px;
+				position: relative;
+				top: 48px;
+				font-size: 15px;
+				font-family: xregular;
+				margin: 0px 0px 12px 0px;
+				opacity: 0.7;}
+		.Percent
+			{width: 1200px;
+			height: 130px;
+			position: absolute;
+			left: 252px;
+			top: 502px;}
+			.Percent01
+				{width: 130px;
+				height: 130px;
+				position: relative;
+				float: left;
+				margin: 0px 158px 0px 0px;}
+	
+	.Middle03
+		{width: 100%;
+		height: 354px;
+		background: url(../Images/Middle03.png) no-repeat;}
+
+	.Middle04
+		{width: 100%;
+		height: 636px;
+		background: url(../Images/Middle04.png);
+		position: relative;}
+		.Midtext
+			{width: 422px;
+			height: 110px;
+			position: absolute;
+			left: 540px;
+			font-family: xlight;
+			font-size: 40px;}
+		.Logobox
+			{width: 445px;
+			height: 360px;
+			position: relative;
+			float: left;
+			margin: 0px 123px 0px 0px;
+			top: 186px;
+			left: 200px;}
+			.Logoboxtext
+				{width: 360px;
+				height: 80px;
+				top: 0px;
+				left: 85px;
+				position: absolute;}
+				.Logoboxtext02
+					{width: 360px;
+					height: 15px;
+					position: absolute;
+					font-size: 13px;
+					font-family: xbold;}
+				.Logoboxtext01
+					{width: 360px;
+					height: 15px;
+					margin: 0px 0px 5px 0px;
+					top: 27px;
+					position: relative;
+					font-size: 14px;
+					font-family: xlight;
+					opacity: 0.7;}
+			.Logobox_01
+				{width: 445px;
+				height: 80px;
+				margin: 0px 0px 38px 0px;
+				position: relative;}
+				.Logopic
+					{width: 65px;
+					height: 65px;}
+
+	.Middle05
+		{width: 100%;
+		height: 623px;
+		background: url(../Images/Middle05.png) no-repeat;}
+		.Vid
+			{width: 1110px;
+			height: 623px;
+			position: relative;}
+			* {
+			  box-sizing: border-box;
+			}
+			#myVideo {
+			  position: absolute;
+			  right: 0;
+			  bottom: 0;
+			  width: 1110px;
+			  height: 623px;
+			}
+				#myBtn {
+			  width: 80px;
+				height: 80px;
+			  font-size: 18px;
+			  position: absolute;
+				top: 400px;
+				left: 516px;
+			  border: none;
+				border-radius: 100%;
+			  background: #fa578e;
+				opacity: 0.5;
+			  cursor: pointer;
+			}
+
+			#myBtn:hover {
+			  background: black;
+			  color: black;}
+
+			#myBtn img
+				{position: absolute;
+				top: 28px;
+				left: 27px;}
+
+	.Middle06
+		{width: 100%;
+		height: 1060px;
+		background-color: white;
+		position: relative;}
+		.Review
+			{width: 258px;
+			height: 400px;
+			position: relative;
+			float: left;
+			margin: 0px 122px 0px 0px;
+			top: 430px;
+			left: 255px;}
+			.Reviewpic
+				{width: 60px;
+				height: 60px;
+				background: url(../Images/Lisa.png);
+				border-radius: 100%;}
+			.Reviewpic2
+				{width: 60px;
+				height: 60px;
+				background: url(../Images/taylor.png);
+				border-radius: 100%;}
+			.Reviewpic3
+				{width: 60px;
+				height: 60px;
+				background: url(../Images/Anna.png);
+				border-radius: 100%;}
+			.Reviewname
+				{width: 258px;
+				height: 20px;
+				position: absolute;
+				top: 78px;
+				font-size: 23px;
+				font-family: xlight;
+				opacity: 0.7;}
+			.Star
+				{width: 180px;
+				height: 20px;
+				position: absolute;
+				top: 110px;
+				left: 70px;}
+				.Star01
+					{width: 20px;
+					height: 20px;
+					position: relative;
+					float: left;
+					margin: 0px 5px 0px 0px;}
+			.Reviewtext
+				{width: 258px;
+				height: 202px;
+				position: absolute;
+				top: 155px;}
+				.Reviewtext01
+					{width: 258px;
+					height: 15px;
+					position: relative;
+					margin: 0px 0px 8px 0px;
+					font-size: 15px;}
+					.Reviewtext01 ul
+						{list-style: none;}
+					.Reviewtext01 ul li
+						{position:absolute;
+						left: 0px;
+						top: -3px;}
+					.Reviewtext01 ul li a
+						{text-decoration: none;
+						color: #fc5880}
+			.Company
+				{width: 1104px;
+				height: 90px;
+				position: absolute;
+				top: 895px;
+				left: 200px;}
+				.companylogo1
+					{width: 170px;
+					height: 30px;
+					opacity: 0.2;
+					position: absolute;
+					top: 32px;}
+				.companylogo2
+					{width: 170px;
+					height: 45px;
+					opacity: 0.2;
+					position: absolute;
+					top: 22px;
+					left: 209px;}
+				.companylogo3
+					{width: 80px;
+					height: 40px;
+					opacity: 0.2;
+					position: absolute;
+					top: 25px;
+					left: 419px;}
+				.companylogo4
+					{width: 180px;
+					height: 30px;
+					opacity: 0.2;
+					position: absolute;
+					top: 30px;
+					left: 543px;}
+				.companylogo5
+					{width: 162px;
+					height: 30px;
+					opacity: 0.2;
+					position: absolute;
+					top: 32px;
+					left: 758px;}
+				.companylogo6
+					{width: 155px;
+					height: 22px;
+					opacity: 0.2;
+					position: absolute;
+					top: 35px;
+					left: 950px;}
+
+	.Middle07
+		{width: 100%;
+		height: 970px;
+		background-color: #ebebeb;
+		position: relative;}
+		.Text07
+			{width: 734px;
+			height: 100px;
+			position: absolute;
+			top: 150px;
+			left: 390px;
+			font-size: 40px;
+			font-family: xlight;}
+		.Box07_01
+			{width: 350px;
+			height: 354px;
+			background-color: white;
+			position: absolute;
+			top: 396px;
+			left: 200px;
+			border-radius: 5px;}
+		.Box07_02
+			{width: 350px;
+			height: 422px;
+			background-color: white;
+			position: absolute;
+			top: 362px;
+			left: 575px;
+			border-radius: 5px;}
+		.Box07_03
+			{width: 350px;
+			height: 488px;
+			background-color: white;
+			position: absolute;
+			top: 330px;
+			left: 952px;
+			border-radius: 5px;}
+			.Smallbox
+				{width: 350px;
+				height: 162px;
+				background: rgb(255,88,88);
+				background: linear-gradient(50deg, rgba(255,88,88,1) 21%, rgba(251,87,130,1) 54%, rgba(248,87,166,1) 100%);
+				border-radius: 5px 5px 0px 0px;}
+				.Smalltext_01
+					{width: 350px;
+					height: 50px;
+					position: absolute;
+					top: 50px;
+					font-size: 30px;
+					font-family: xbold;}
+				.Smalltext_02
+					{width: 350px;
+					height: 30px;
+					position: absolute;
+					top: 90px;
+					font-size: 23px;
+					font-family: xlight;}
+				.Tick
+					{width: 25px;
+					height: 25px;
+					background: url(../Images/tick.png);
+					position: relative;
+					top: 45px;
+					left: 50px;
+					margin: 0px 0px 10px 0px;}
+				.Ticktext
+				{width: 266px;
+				height: 300px;
+				position: absolute;
+				top: 212px;
+				left: 85px;}
+					.Ticktext01
+						{width: 266px;
+						height: 24px;
+						position: relative;
+						margin: 0px 0px 11px 0px;
+						font: 15px;
+						font-family: xregular;
+						opacity: 0.7;}
+
+	.Middle08
+		{width: 100%;
+		height: 630px;
+		background: url(../Images/Middle08.png);
+		position: relative;}
+		.ip_front
+			{width: 210px;
+			height: 431px;
+			position: absolute;
+			z-index: 10;
+			top: 98px;
+			left: 335px;}
+		.ip_back01
+			{width: 182px;
+			height: 373px;
+			position: absolute;
+			z-index: 5;
+			top: 128px;
+			left: 200px;}
+		.ip_back02
+			{width: 182px;
+			height: 373px;
+			position: absolute;
+			z-index: 5;
+			top: 128px;
+			left: 500px;}
+		.Textbox08
+			{width: 410px;
+			height: 260px;
+			
+			position: absolute;
+			top: 175px;
+			left: 840px;
+			font-size: 40px;
+			font-family: xlight;}
+			.Android
+					{width: 200px;
+					height: 60px;
+					position: absolute;
+					top: 190px;
+					left: 180px;
+					border-radius: 30px;
+					border: 2px #FFFFFF solid;
+					text-decoration: none;}
+					.Text02text ul li
+						{width: 115px;
+						height: 15px;
+						position: absolute;
+						top: 22px;
+						left: 60px;
+						font-size: 13px;
+						font-family: xbold;
+						text-decoration:  none;}
+					.Text02text ul
+						{list-style: none;}
+					.Text02text ul li a
+						{text-decoration: none;
+						color: white;}
+					.Android img
+						{position: absolute;
+						top: 16px;
+						left: 25px;}
+	
+	.Bottom
+		{width: 100%;
+		height: 596px;
+		background: url(../Images/Bottom.png);
+		position: relative;}
+		.Botbox
+			{width: 140px;
+			height: 180px;
+			position: relative;
+			margin: 0px 45px 0px 0px;
+			float: left;
+			top: 145px;
+			left: 200px;}
+			.Botboxtext
+				{width: 140px;
+				height: 15px;
+				position: relative;
+				margin: 0px 0px 18px 0px;
+				font-size: 14px;
+				font-family: xregular;
+				opacity: 0.7;}
+				.Botboxtext a
+					{text-decoration: none;
+					color: white;}
+				.Botboxtext a:hover
+					{opacity: 0.2;}
+			.Botboxtext01
+				{width: 140px;
+				height: 15px;
+				position: relative;
+				margin: 0px 0px 20px 0px;
+				font-size: 13px;
+				font-family: xbold;}
+			.Bottomlogo
+				{width: 325px;
+				height: 48px;
+				position: absolute;
+				top: 398px;
+				left: 200px;}
+				.LogoBot
+					{width: 48px;
+					height: 48px;
+					background-color: white;
+					border-radius: 5px;
+					position: absolute;}
+					.LogoBot img
+						{position: absolute;
+						left: 5px;
+						top: 1px;}
+					.Textbot
+						{width: 258px;
+						height: 15px;
+						position: relative;
+						margin: 4px 0px 10px 0px;
+						left: 68px;
+						font-size: 15px;
+						font-family: xregular;}
+				.Search
+					{width: 350px;
+					height: 180px;
+					position: absolute;
+					left: 950px;
+					top: 145px;
+					font-size: 13px;
+					font-family: xbold;}
+					.Searchbar
+						{width: 350px;
+						height: 48px;
+						background-color: white;
+						border-radius: 30px;
+						position: absolute;
+						top: 36px;}
+						.Bartext
+							{width: 145px;
+							height: 15px;
+							position: absolute;
+							top: 15px;
+							left: 18px;
+							font-size: 15px;
+							font-family: xregular;
+							opacity: 0.3;}
+						.Searchbar button
+							{width: 116px;
+							height: 40px;
+							position: absolute;
+							top: 4px;
+							left: 230px;
+							border: none;
+							border-radius: 30px;
+							list-style: none;
+							background: rgb(255,88,88);
+							background: linear-gradient(50deg, rgba(255,88,88,1) 21%, rgba(251,87,130,1) 54%, rgba(248,87,166,1) 100%);
+							font-size: 13px;
+							font-family: xbold;}
+						.Searchbar button a
+							{text-decoration: none;
+							color: white;}
+					.Icon
+						{width: 350px;
+						height: 50px;
+						position: absolute;
+						top: 104px;}
+						.Icon01
+							{width: 50px;
+							height: 50px;
+							position: relative;
+							float: left;
+							margin: 0px 20px 0px 0px;}
+						
+					
+
+
+
+
